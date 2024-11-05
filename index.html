@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,27 +37,27 @@
             margin-bottom: 20px;
         }
 
-            .input-group input {
-                width: 100%;
-                padding: 10px;
-                border: none;
-                border-radius: 5px;
-                background-color: #555;
-                color: #f0f0f0;
-                font-size: 14px;
-                text-align: center;
-                outline: none;
-                box-sizing: border-box;
-                transition: box-shadow 0.3s;
-            }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: #f0f0f0;
+            font-size: 14px;
+            text-align: center;
+            outline: none;
+            box-sizing: border-box;
+            transition: box-shadow 0.3s;
+        }
 
-                .input-group input::placeholder {
-                    color: #c0c0c0;
-                }
+        .input-group input::placeholder {
+            color: #c0c0c0;
+        }
 
-                .input-group input:focus {
-                    box-shadow: 0 0 8px #9e86b5;
-                }
+        .input-group input:focus {
+            box-shadow: 0 0 8px #9e86b5;
+        }
 
         .button {
             width: 100%;
@@ -72,10 +72,10 @@
             transition: background-color 0.3s, box-shadow 0.3s;
         }
 
-            .button:hover {
-                background-color: #9e86b5;
-                box-shadow: 0 0 8px #9e86b5;
-            }
+        .button:hover {
+            background-color: #9e86b5;
+            box-shadow: 0 0 8px #9e86b5;
+        }
 
         .message {
             text-align: center;
@@ -103,6 +103,19 @@
             border: none; /* Remove iframe border */
         }
     </style>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable F12 and Ctrl+Shift+I
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                e.preventDefault();
+            }
+        });
+    </script>
 </head>
 <body>
 
